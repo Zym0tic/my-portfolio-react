@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
+import Header from './header';
+import Footer from './footer';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
@@ -26,10 +28,12 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
+      <section className='row'>
+      <Header />
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
+      </section> 
       {renderPage()}
+      <Footer />
     </div>
   );
 }
