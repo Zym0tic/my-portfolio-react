@@ -1,17 +1,26 @@
-import React from 'react';
+import React from "react";
+import projects from "../project.js";
 
-export default function Portfolio() {
+export default function Portfolio(props) {
   return (
     <div>
       <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <ul className="Project-group row">
+        {projects.map((project) => (
+          <li className="project-group-item col-xs-12 col-md-6 col-lg-4" key={project.id}>
+
+            <div className="card text-center">
+              <div className="card-header">
+                <h2>{project.name}</h2>
+              </div>
+              <div className="card-body">
+              <img className="img-fluid" src={project.img} alt="BigCo Inc. logo"/>,
+                {project.description}</div>
+            </div>
+
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
