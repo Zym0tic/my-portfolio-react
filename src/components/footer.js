@@ -2,7 +2,9 @@ import React from 'react';
 
 function Footer() {
     return (
-       <p>Github  LinkedIn</p>
+    <footer className="mt-auto">
+        <p>Github  LinkedIn</p>
+    </footer>
     )
 };
 

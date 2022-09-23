@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Contact() {
-
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
 
     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
+    setName(value);
+    setEmail(value);
+    setMessage(value);
   };
 
   const handleFormSubmit = (e) => {
@@ -21,37 +20,53 @@ export default function Contact() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    alert(`Hello ${name}`);
+    setName("");
   };
 
   return (
     <div>
       <h1>Contact</h1>
       <form className="form">
+        <wrapper className="row">
+        <div class="input-group">
         <input
-          value={firstName}
-          name="firstName"
+          class="form-control"
+          value={name}
+          name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="First Name"
+          placeholder="Name"
         />
+        </div>
+
+        <div class="input-group">
         <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-        <input
+          class="form-control"
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
-          placeholder="email"
+          placeholder="Email"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        </div>
+   
+        <div class="input-group">
+          <textarea 
+          class="form-control"
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Message"></textarea>
+        </div>
+        </wrapper>
+
+        <button
+          className="btn btn-dark"
+          type="button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>
