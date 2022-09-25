@@ -9,10 +9,10 @@ export default function Contact() {
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    setName(value);
-    setEmail(value);
-    setMessage(value);
+
+    setName(name);
+    setEmail(email);
+    setMessage(message);
   };
 
   const handleFormSubmit = (e) => {
