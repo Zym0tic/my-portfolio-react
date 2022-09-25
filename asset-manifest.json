@@ -1,13 +1,20 @@
 {
   "files": {
     "main.css": "/my-portfolio-react/static/css/main.9bd7a35e.css",
-    "main.js": "/my-portfolio-react/static/js/main.08dfd827.js",
+    "main.js": "/my-portfolio-react/static/js/main.8292b197.js",
+    "static/media/criminal-medals.PNG": "/my-portfolio-react/static/media/criminal-medals.24cd256dfe07214d0266.PNG",
+    "static/media/WatchmeNowhomepage.png": "/my-portfolio-react/static/media/WatchmeNowhomepage.827968856a8f1ca77bba.png",
+    "static/media/luke-hiroshima.jpg": "/my-portfolio-react/static/media/luke-hiroshima.7fa7efea76fd9b065ba9.jpg",
+    "static/media/campaign-manager-img.PNG": "/my-portfolio-react/static/media/campaign-manager-img.9c381b3959ab2e0bde47.PNG",
+    "static/media/luke-resume.pdf": "/my-portfolio-react/static/media/luke-resume.ce2c4c9e94481b30b377.pdf",
+    "static/media/jate.PNG": "/my-portfolio-react/static/media/jate.66f35ba16cfed2cb76ea.PNG",
+    "static/media/note-taker.PNG": "/my-portfolio-react/static/media/note-taker.d1ce21b7f14456b47cae.PNG",
     "index.html": "/my-portfolio-react/index.html",
     "main.9bd7a35e.css.map": "/my-portfolio-react/static/css/main.9bd7a35e.css.map",
-    "main.08dfd827.js.map": "/my-portfolio-react/static/js/main.08dfd827.js.map"
+    "main.8292b197.js.map": "/my-portfolio-react/static/js/main.8292b197.js.map"
   },
   "entrypoints": [
     "static/css/main.9bd7a35e.css",
-    "static/js/main.08dfd827.js"
+    "static/js/main.8292b197.js"
   ]
 }
